@@ -1,22 +1,38 @@
 const https = require('https');
 const fs = require('fs');
-const pokemon = JSON.parse(process.argv[2])
+const input = JSON.parse(process.argv[2])
 
-fetch(pokemon.url)
+fetch(input.url)
     .then((response) => response.json())
-    .then((response) => {
-        const imgUrl = response.sprites.other["official-artwork"].front_default
+    .then((pokemon) => {
+        const imgUrl = pokemon.sprites.other["official-artwork"].front_default
         checkImg(imgUrl, pokemon.name)
-        console.log(`# ${pokemon.name}`)
+        console.log(titleMd(pokemon.name, pokemon.id))
+        console.log("---")
+        console.log(`### Height: \`${pokemon.height*10} cm\``)
+        console.log(`### Weight: \`${pokemon.weight*100} g\``)
+        console.log(`### Types: ${buildTypes(pokemon.types)}`)
+        console.log(`### Moves`)
         console.log(getMdImg(pokemon.name))
     })
+
+const buildTypes = (types) => {
+    return types
+        .map(type => type.type.name)
+        .map(typeName => `\`${typeName}\``)
+        .join(' ')
+}
+
+const titleMd = (name, id) => {
+    return `## \`${name} #${id}\``
+}
 
 const getMdImg = (name) => {
     return `![${name}](${getImgPath(name)})`;
 }
 
 const getImgPath = (name) => {
-    return `${name}.jpeg`;
+    return `img/${name}.jpeg`;
 }
 
 const checkImg = (imgUrl, name) => {

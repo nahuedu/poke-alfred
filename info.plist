@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.nahuel.pokemon</string>
+	<string>com.nahuedu.poke-alfred</string>
+	<key>category</key>
+	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>1FA5516B-0F8B-48AF-AE52-269415C0EFED</key>
@@ -70,13 +72,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>nahuedu</string>
 	<key>description</key>
-	<string></string>
+	<string>Search for pokemons</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>pokemon</string>
+	<string>poke-alfred</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -179,9 +181,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Search for pokemons</string>
 				<key>title</key>
-				<string></string>
+				<string>poke-alfred</string>
 				<key>type</key>
 				<integer>11</integer>
 				<key>withspace</key>
@@ -309,6 +311,6 @@
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/nahuedu</string>
 </dict>
 </plist>
