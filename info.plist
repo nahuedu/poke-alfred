@@ -173,7 +173,7 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>/Users/nandreoli/.nvm/versions/node/v20.5.0/bin/node search.js</string>
+				<string>~/.nvm/versions/node/v20.5.0/bin/node src/search.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -222,7 +222,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/Users/nandreoli/.nvm/versions/node/v20.5.0/bin/node img.js "${selected}"</string>
+				<string>~/.nvm/versions/node/v20.5.0/bin/node src/img.js "${selected}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
