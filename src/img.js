@@ -12,7 +12,6 @@ fetch(input.url)
         console.log(`### Height: \`${pokemon.height*10} cm\``)
         console.log(`### Weight: \`${pokemon.weight*100} g\``)
         console.log(`### Types: ${buildTypes(pokemon.types)}`)
-        console.log(`### Moves`)
         console.log(getMdImg(pokemon.name))
     })
 

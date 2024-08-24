@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.nahuedu.poke-alfred</string>
-	<key>category</key>
-	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>1FA5516B-0F8B-48AF-AE52-269415C0EFED</key>
@@ -89,13 +87,13 @@
 				<key>fontmode</key>
 				<integer>0</integer>
 				<key>fontsizing</key>
-				<integer>0</integer>
+				<integer>4</integer>
 				<key>footertext</key>
-				<string></string>
+				<string>Loading...</string>
 				<key>inputfile</key>
-				<string></string>
+				<string>resources/loading.md</string>
 				<key>inputtype</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>loadingtext</key>
 				<string></string>
 				<key>outputmode</key>
@@ -239,35 +237,14 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>'{query}', {variables}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>0B65EBC2-0E34-4212-A13B-39347A4906F4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># poke-alfred
+### A pokemon workflow for Alfred made for learning purposes (and fun)
+
+![pikachu](resources/logo-full.jpg)</string>
 	<key>uidata</key>
 	<dict>
-		<key>0B65EBC2-0E34-4212-A13B-39347A4906F4</key>
-		<dict>
-			<key>xpos</key>
-			<real>915</real>
-			<key>ypos</key>
-			<real>570</real>
-		</dict>
 		<key>1FA5516B-0F8B-48AF-AE52-269415C0EFED</key>
 		<dict>
 			<key>xpos</key>
@@ -309,7 +286,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string></string>
+	<string>0.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/nahuedu</string>
 </dict>
